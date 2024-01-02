@@ -42,8 +42,6 @@ export const RegisterForm = () => {
       const data = await register(values);
       setError(data.error);
       setSuccess(data.success);
-
-      console.log(data);
     });
   };
 
