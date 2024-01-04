@@ -6,6 +6,8 @@ import db from "./lib/db";
 export const {
   handlers: { GET, POST },
   auth,
+  signIn, // server-side authentication
+  signOut, // server-side authentication
 } = NextAuth({
   adapter: PrismaAdapter(db),
   session: { strategy: "jwt" },
